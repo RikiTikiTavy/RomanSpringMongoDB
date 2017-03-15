@@ -1,3 +1,4 @@
+C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\controller\TwitterClass.java
 C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\dao\UserDao.java
 C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\controller\UserController.java
 C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\service\UserService.java
@@ -5,4 +6,5 @@ C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\service\UserServic
 C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\config\WebConfig.java
 C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\dao\UserDaoImpl.java
 C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\model\User.java
+C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\model\PasswordEncryptor.java
 C:\JavaProjects\SozonovRomanSpringMongoDB\src\main\java\roman\config\WebInitializer.java

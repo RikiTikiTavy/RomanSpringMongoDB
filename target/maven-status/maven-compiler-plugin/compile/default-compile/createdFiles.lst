@@ -1,3 +1,4 @@
+roman\controller\TwitterClass.class
 roman\config\WebConfig.class
 roman\config\WebInitializer.class
 roman\service\UserService.class
@@ -5,4 +6,5 @@ roman\dao\UserDaoImpl.class
 roman\dao\UserDao.class
 roman\service\UserServiceImpl.class
 roman\controller\UserController.class
+roman\model\PasswordEncryptor.class
 roman\model\User.class

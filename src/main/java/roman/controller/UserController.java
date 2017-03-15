@@ -54,19 +54,7 @@ public class UserController {
 			userService.add(user);
 		}
 
-		Twitter twitter = new TwitterFactory().getInstance();
-		// Twitter Consumer key & Consumer Secret
-		twitter.setOAuthConsumer("", "");
-		// Twitter Access token & Access token Secret
-		twitter.setOAuthAccessToken(new AccessToken("", ""));
-		try {
-			// Getting Twitter Timeline using Twitter4j API
-			ResponseList statusReponseList = twitter.getUserTimeline(new Paging(1, 5));
-
-			// Post a Tweet using Twitter4j API
-			Status status = twitter.updateStatus("New User " + user.getName() + " Successfully added");
-		} catch (Exception e) {
-		}
+		TwitterClass.twit(user);
 
 		return "redirect:/user/list";
 	}

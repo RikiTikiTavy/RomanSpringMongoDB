@@ -1,6 +1,5 @@
 package roman.model;
 
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 import org.springframework.data.annotation.Id;
@@ -84,25 +83,9 @@ public class User {
 
 	public void setPassword(String password) {
 		try {
-			this.password = hash256(password);
+			this.password = PasswordEncryptor.hash256(password);
 		} catch (NoSuchAlgorithmException e) {
-
 			e.printStackTrace();
 		}
-
 	}
-
-	public static String hash256(String data) throws NoSuchAlgorithmException {
-		MessageDigest md = MessageDigest.getInstance("SHA-256");
-		md.update(data.getBytes());
-		return bytesToHex(md.digest());
-	}
-
-	public static String bytesToHex(byte[] bytes) {
-		StringBuffer result = new StringBuffer();
-		for (byte byt : bytes)
-			result.append(Integer.toString((byt & 0xff) + 0x100, 16).substring(1));
-		return result.toString();
-	}
-
 }
